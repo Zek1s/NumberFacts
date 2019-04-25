@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/backend/index.js"></script>
+    <style>
+        body {
+            background-image: url(https://freedesignfile.com/upload/2017/02/Abstract-blue-background-with-line-vector-illustration.jpg);
+            margin-right: 150px;
+            margin-left: 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    }
+    .myButton:hover {
+        background-color:#ffe100;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+        #title_image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            }
+        #line {
+            border-top: 10px solid blue;
+            border-style: dotted;
+            border-radius: 10px;
+        }
+        #Numberslogo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 250px;
+        }
+    </style>
+    <title>Web App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        function reloadPage(){
+            location.reload(true);
+        }
+    </script>
+</head>
+
+<body>
+    <img id="Numberslog" src="https://upload.wikimedia.org/wikipedia/en/9/95/Numbers_Record_Label_Logo.png" alt="ChuckApproves">
+    <h6 style="text-align:center; font-size:40px">This web system lets you find a random fact about any number and improve your fun fact knowledge!</h6>
+    <br>
+    <hr id="line">
+        <div>
+            <h1 style="font-family: Arial, Helvetica, sans-serif; color: blueviolet; padding-left: 100px">NUMBER IS: <span class="number"></span></h1>
+            <div style="padding-bottom:50px"></div>
+            </div>
+            <h1 style="font-family: Arial, Helvetica, sans-serif; color: blueviolet; padding-left: 100px"><p class="text"></p></h1>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <style>
+                .fa {
+                  font-size: 50px;
+                  cursor: pointer;
+                  user-select: none;
+                }
+                
+                .fa:hover {
+                  color: darkblue;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                
+                <script>
+                function myFunction(x) {
+                  x.classList.toggle("fa-thumbs-down");
+                }
+                </script>
+            </div>
+        </div>
+        <br>
+    <hr id="line">
+    <div style="padding-top:40px">
+    <button class="myButton" style="float:left" onclick="reloadPage();">Next Random Number Fact</button>
+    <a href="years.html"><button class="myButton" style="float:left">Next Year Fact</button></a>
+    <br>
+    <br>
+    </div>
+</body>
+
+</html>

@@ -20,7 +20,7 @@
 - Retrieve a random number fact: GET http://numbersapi.com/random/trivia
 - Retreive a random year fact: GET http://numbersapi.com/random/year
 - Retreive a random math fact: GET http://numbersapi.com/random/math
-- Post like: POST /api/trivia/:number/like
+- Like: POST /api/trivia/:number/like
     - 400 - {error: 'invalid number'}
 - Unlike: DELETE /api/trivia/:number/like
 - 404 - {error: 'page not found'}

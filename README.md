@@ -1,11 +1,11 @@
-# Random Number Facts
+# Random Jokes
 - [ ] Replace "WEB system" with your system name
 
 ## Description
-- This system provides a interesting fact about any random number.
+- [ ] The main aim of this system is to generate random jokes and provide high quality humor. There is no age limit because all the jokes that have violent content are censored. System lets you to sort the content you want to see. This can be done with integrated filter in system.
 
 ## Entity definition
-- Fact: ID(number(length=1000)), fact(string(length=10000)), likes(number(length>0)), like_date(date(length=10)), category(string(length=100)).
+- Joke: id(number(length=10000)), title(string(length=100)), content(string(length=100000)), date_posted(date), image, likes(number(length>0)), last_like_location(string(length=50))
 
 - [ ] Entity should have a name
 - [ ] Entity should have 3 mandatory attributes:
@@ -17,14 +17,18 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
-- Retrieve a random number fact: GET http://numbersapi.com/random/trivia
-- Retreive a random year fact: GET http://numbersapi.com/random/year
-- Post like: POST /api/trivia/:number/like
-    - 400 - {error: 'invalid number'}
-- Unlike: DELETE /api/trivia/:number/like
+
+- Retrieve a random chuck joke: GET https://api.chucknorris.io/jokes/random 
+- Post like: POST /api/jokes/:id/like
+    - 400 - {error: 'invalid joke ID'}
+- Post location: GET /api/jokes/:id/location
+    - 400 - {error: 'invalid joke ID'}
+- Upload image: POST /api/jokes/:id/image
+    - 400 - {error: 'invalid joke ID'}
+    - 400 - {error: 'wrong image format'}
+
 - 404 - {error: 'page not found'}
 - 500 - {error: 'server error'}
-
 
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
 - [ ] Optionally define additional API methods that WEB system is going to expose
@@ -53,4 +57,4 @@
     - [ ] A component to create a new entity/edit existing entity. It should be posbile to create new entity and edit selected entity
         - [ ] Each attribute should have a dedicated editor field: text box for string or number, checkbox or radio buttons for boolean, date picker for date, etc.
 
-https://wireframe.cc/F4zcbq
+https://wireframe.cc/0n7yxX
